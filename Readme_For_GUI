@@ -1,0 +1,59 @@
+Installation and Setup Guide
+
+Before running the GUI, a few Python packages need to be installed to ensure smooth communication and display functionality.
+Follow the steps below carefully.
+
+Required Packages
+
+Run these commands in your command prompt or terminal in the given order:
+
+pip install PyQt5
+pip install pyserial
+pip install PyOpenGL
+pip install numpy
+
+
+Alternatively, all packages can be installed at once using:
+
+pip install PyQt5 pyserial PyOpenGL numpy
+
+Purpose of Each Package
+Package	Description
+PyQt5	Provides the framework for all GUI windows and widgets used in the project.
+pyserial	Enables serial communication between the Arduino and the GUI through COM ports.
+PyOpenGL	Handles 3D rendering tasks such as visualizing components in DISPLAY.py.
+numpy	Used for mathematical operations and required as a dependency for PyOpenGL.
+Quick Setup Steps
+
+Check Python Installation
+Open the command prompt or terminal and type:
+
+python --version
+
+
+Ensure that Python 3.x is installed on your system.
+
+Open the Project Directory
+Navigate to the folder where your GUI project files are stored:
+
+cd path/to/your/project/folder
+
+
+Install All Dependencies
+Run the installation command:
+
+pip install PyQt5 pyserial PyOpenGL numpy
+
+
+Launch the Application
+Once the installations are complete, start the main GUI using:
+
+python layout.py
+
+Common Installation Issues
+Issue	Solution
+pip not found	Use pip3 instead of pip on some systems.
+Permission denied	Add --user to the command:
+pip install --user PyQt5 pyserial PyOpenGL numpy
+Font or resource warnings	These are safe to ignore; the GUI will load default fonts automatically.
+No COM ports detected	Check that the Arduino is properly connected and that drivers are installed.
